@@ -1,0 +1,142 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1a1a1d;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(135deg, #3a0ca3, #7209b7);
+  color: #fff;
+  padding: 30px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  background: #2a2a2e;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #c77dff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e0aaff;
+}
+
+main {
+  padding: 30px;
+}
+
+img {
+  margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(114, 9, 183, 0.5);
+}
+
+h2 {
+  margin-top: 40px;
+  color: #c77dff;
+}
+
+/* Estilo para os botões de redes sociais */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #3a0ca3;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  min-width: 140px;
+}
+
+.social-button:hover {
+  background: #7209b7;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px rgba(199, 125, 255, 0.6);
+}
+
+/* Ícone do WhatsApp com tamanho reduzido */
+.whatsapp-icon {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-button {
+    width: 90%;
+    max-width: 250px;
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .social-button {
+    font-size: 14px;
+    padding: 8px 14px;
+    min-width: 120px;
+  }
+  
+  .whatsapp-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
